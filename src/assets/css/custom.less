@@ -1,0 +1,283 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap);
+
+body{
+	margin:0;
+	padding:0;
+	font-family: 'Poppins', sans-serif;
+}
+.container{
+	max-width: 768px;
+	margin:0 auto;
+}
+header{
+	height: 70px;
+	width: 100%;
+	background-color: #e30047;
+	display: inline-block;
+	padding:15px;
+	box-sizing: border-box;
+	text-align: center;
+	.ico_wrap{
+		vertical-align: middle;
+		width:40px;
+		height: 40px;
+		display: inline-block;
+		margin:0px 15px;
+		position: relative;
+		&:hover{
+			cursor:pointer;
+		}
+		.badge{
+			width: 25px;
+			height: 25px;
+			line-height: 25px;
+			border-radius: 50%;
+			background-color: #fff;
+			color: #555;
+			text-align: center;
+			font-size: 16px;
+			position: absolute;
+			right: -10px;
+			top: -6px;
+			font-weight: bold;
+		}
+		
+	}
+	.search_wrap{
+		display: inline-block;
+		vertical-align: middle;
+		width: 60%;
+		height: 40px;
+		background-color: #fff;
+		border-radius: 5px;
+		position: relative;
+		padding-left: 50px;
+		overflow: hidden;
+		margin:0px 15px;
+		.search_ico{
+			width: 25px;
+			height: 25px;
+			position: absolute;
+			left: 10px;
+			top: 6px;
+
+		}
+		input[type="search"]{
+			height: 40px;
+			width: 100%;
+			background-color: #fff;
+			border:none;
+			outline: none;
+			-webkit-appearance:none;
+		}
+	}
+}
+
+img{
+	max-width: 100%;
+	height:auto;
+}
+
+.mr10{
+	margin-right: 10px;
+}
+.mr20{
+	margin-right: 20px;
+}
+div,span,h1,h2{
+	box-sizing:border-box;
+}
+
+.catsecWrap{
+	width: 100%;
+	display:inline-block;
+	text-align:center;
+	padding:20px;
+	a{
+		display:inline-block;
+		vertical-align:middle;
+		padding:10px 20px;
+		background-color:#f5f5f5;
+		text-decoration: none;
+		color:#333;
+		margin:0px 10px;
+		border-radius:3px;
+
+	}
+}
+
+.prd_wrap{
+	background-color:#f3f4f6;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	.prd_thumb{
+		width: 50%;
+		position:relative;
+		background-color:#fff;
+		border:solid 1px #f3f4f6;
+		.imgwrap{
+			width: 100%;
+			padding:20px;
+		}
+		img{
+			width: 100%;
+		}
+		.prd_name{
+			font-size: 24px;
+			color:#9d9d9d;
+			width:100%;
+			margin-bottom: 10px;
+			padding:0px 25px;
+			font-weight:300;
+		}
+		.prd_amnt{
+			color: #4f4f4f;
+			margin-bottom: 13px;
+			font-weight: 300;
+			font-size: 24px;
+			display: inline-block;
+			padding:0px 25px;
+		}
+		.atc_btn{
+			width: 100%;
+			text-align: center;
+			color: #fff;
+			padding: 16px 0;
+			font-weight: 500;
+			border: none;
+			background-color: #e30047;
+			transition: all .3s ease;
+			font-size: 22px;
+			&:hover{
+				background-color: #000;
+				color:#fff;
+				cursor: pointer;
+			}
+		}
+		.wishlistIco{
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			right: 15px;
+			top: 15px;
+		}
+	}
+}
+
+.cart_link{
+	display:block;
+}
+
+.cartitem_countsec{
+	width: 100%;
+	    background-color: #f1f1f1;
+	    font-family: Poppins,sans-serif;
+	    font-size: 18px;
+	    padding: 15px 25px;
+}
+
+.cartitemBox{
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+	position: relative;
+	border-bottom: solid 2px #f1f1f1;
+	padding: 20px;
+	.cls_btn{
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background-color: #c7c7c7;
+		text-align: center;
+		line-height: 30px;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		color: #060606;
+		font-family: Poppins,sans-serif;
+		&:hover{
+			cursor:pointer;
+		}
+	}
+
+	.itemboxRow{
+		width: 100%;
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		.imgWrap{
+			width: 30%;
+			padding:20px;
+		}
+		.imgdesc{
+			width: 70%;
+			display:flex;
+			flex-direction:column;
+			padding:20px;
+			span{
+				margin-bottom: 10px;
+			}
+			span.name{
+				color: #060606;
+				font-family: Poppins,sans-serif;
+				font-size: 20px
+	
+			}
+			span.size{
+				color: #060606;
+				font-family: Poppins,sans-serif;
+				font-size: 18px
+
+			}
+		}
+	}
+	.itemboxRow.footer{
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:space-between;
+		.rate{
+			font-size: 20px;
+			color: #505050;
+			width:70%;
+			text-align:right;
+		}
+		.counter{
+			width:30%;
+		}
+	}
+}
+
+.couterBox{
+	display:flex;
+		flex-wrap:wrap;
+		justify-content:center;
+		span{
+			vertical-align:middle;
+		}
+
+	.coutinput{
+		width: 30px;
+		border:none;
+		outline:none;
+		font-family: Poppins,sans-serif;
+		font-size: 18px;
+		text-align:center;
+		font-weight:600;
+	}
+	.coutCtrBtn{
+		width: 30px;
+		height:30px;
+		background-color: #ddd;
+		text-align:center;
+		line-height: 30px;
+		color:#000;
+		display:block;
+		border-radius:50%;
+		&:hover{
+			cursor:pointer;
+		}
+	}
+}
+
+
